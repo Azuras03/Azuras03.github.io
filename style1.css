@@ -1,0 +1,8 @@
+@keyframes intro{
+    0% { filter:blur(50px);opacity: 0%;}
+    100%{ filter: blur(0px);opacity:100%;}
+}
+p{
+    transition : all 0.5s;
+    animation: intro 3s ease-out 1 normal;
+}
