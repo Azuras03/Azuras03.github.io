@@ -4,5 +4,5 @@
 }
 p{
     transition : all 0.5s;
-    animation: intro 3s ease-out 1 normal;
+    animation: intro 1s ease-out 1 normal;
 }
