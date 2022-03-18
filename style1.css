@@ -1,8 +1,113 @@
+@font-face {
+    font-family: "Poppins Medium";
+    src: url('font/Poppins-Medium.ttf');
+}
+
 @keyframes intro{
     0% { filter:blur(50px);opacity: 0%;}
     100%{ filter: blur(0px);opacity:100%;}
 }
-.main-content p{
+
+@keyframes introcolor{
+    0% { rgb(173, 173, 173);
+    }
+    50%{ 
+        background-color:rgb(173, 173, 173);
+    }
+    74%{
+        background-color:rgb(173, 173, 173);
+    }
+    75% { background-color:rgb(255, 255, 255);
+    }
+    100%{ 
+        background-color:rgb(173, 173, 173);
+    }
+}
+
+@keyframes introcolormain{
+    0% { color:rgb(124, 124, 124);
+        background-color:transparent;
+        filter:none;
+        opacity: 0%;
+    }
+    50%{ 
+        color:rgb(73, 73, 73);
+        background-color:transparent;
+        filter:none;
+        opacity: 0%;
+    }
+    74%{
+        color:rgb(73, 73, 73);
+        background-color:transparent;
+        filter:none;
+        opacity: 0%;
+    }
+    75% { color:rgb(255, 255, 255);
+        opacity:100%;
+        transform: scale(2,0);
+        
+    }
+    80%{
+        transform: scale(0.5,1.5);
+    }
+    87%{
+        transform: scale(1.3,0.7);
+    }
+    94%{
+        transform: scale(0.8,1.1);
+    }
+    100%{ 
+        color:rgb(26, 26, 26);
+        opacity: 100%;
+    }
+}
+
+@keyframes introcolortxta{
+    0% { 
+    }
+    50%{ 
+        color:rgb(73, 73, 73);
+    }
+    74%{
+        color : rgb(73, 73, 73);
+    }
+    75% { color:rgb(255, 255, 255);
+    }
+    100%{ 
+        color:rgb(0, 81, 134);
+    }
+}
+
+p{
+
+}
+
+.main-content{
+    display:flex;
+    position: absolute;
+    left : 30%;
+    right : 30%;
+    top : 20%;
     transition : all 0.5s;
-    animation: intro 1s ease-out 1 normal;
+    flex-direction: column;
+    justify-content: center;
+    background-color: grey;
+    border-radius: 50px;
+    padding: 20px;
+    filter:drop-shadow(0px 10px 10px rgba(0, 0, 0, 0.5));
+    color : black;
+    align-items: center;
+    align-self: center;
+    animation: introcolormain 2s ease-in-out 1 normal;
+}
+
+.main-content a{
+    animation: introcolortxta 2s ease-in-out 1 normal;
+    color : rgb(0, 81, 134);
+}
+
+html{
+    font-family: "Poppins Medium";
+    background-color:rgb(173, 173, 173);
+    animation: introcolor 2s ease-in-out 1 normal;
 }
