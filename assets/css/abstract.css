@@ -269,9 +269,12 @@ html {
        transform : scale(5) skew(60deg);
    }
    
+   .image{
+       overflow:hidden;
+   }
    
    
-   img {
+   .image img {
        transition: all 1s;
        width : 600px;
        height : 600px;
@@ -281,6 +284,7 @@ html {
        animation-direction: alternate;
        margin : 0% 25%;
        opacity: 100%;
+       overflow: hidden;
    }
    img:active {
        opacity: 100%;
