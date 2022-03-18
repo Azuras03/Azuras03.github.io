@@ -43,7 +43,7 @@
         opacity:100%;
         background-color:rgb(22, 60, 75);
         box-shadow: 0px 10px 15px rgba(0, 0, 0, 0);
-        transform: scale(2,0);
+        transform: scale(2,0) translateY(100px);
         
     }
     80%{
@@ -63,6 +63,7 @@
         box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.418);
         color:rgb(226, 243, 255);
         opacity: 100%;
+        transform: translateY(0px);
     }
 }
 
@@ -81,6 +82,40 @@
         color:rgb(0, 81, 134);
     }
 }
+
+/* Add a black background color to the top navigation */
+.topnav {
+    display:flex;
+    background-color: #333;
+    overflow: hidden;
+    position:fixed;
+    font-family: "Poppins";
+    font-weight: 700;
+    top:0;
+    justify-content: space-between;
+    left: 0;
+    right: 0;
+    width:100%;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+
+  .topnav p{
+      color : rgb(196, 226, 255);
+      padding-left: 2%;
+  }
+
+  .topnav img{
+    object-fit: contain;
+    size: cover;
+    width: 50px;
+    height: 50px;
+    align-items: center;
+    justify-content: right;
+    padding-top:1px;
+    padding-right: 10px;
+    align-self: center;
+  }
 
 .main-content{
     display:flex;
