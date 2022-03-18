@@ -2,7 +2,7 @@
     0% { filter:blur(50px);opacity: 0%;}
     100%{ filter: blur(0px);opacity:100%;}
 }
-.main > p{
+.main p{
     transition : all 0.5s;
     animation: intro 1s ease-out 1 normal;
 }
