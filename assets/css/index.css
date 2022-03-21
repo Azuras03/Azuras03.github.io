@@ -7,17 +7,13 @@
 
 @keyframes introcolor{
     0% {
+        filter: hue-rotate(0deg);
     }
-    50%{ 
-        background-color:rgb(173, 173, 173);
+    50%{
+        filter: hue-rotate(180deg);    
     }
-    74%{
-        background-color:rgb(173, 173, 173);
-    }
-    75% { background-color:rgb(255, 255, 255);
-    }
-    100%{ 
-        background-color:rgb(173, 173, 173);
+    100%{
+        filter:hue-rotate(360deg)
     }
 }
 
@@ -147,6 +143,11 @@
     padding-top:1px;
     padding-right: 10px;
     align-self: center;
+    transition: all 0.5s;
+  }
+
+  .topnav img:hover{
+      transform:scale(5.5) rotate(360deg);
   }
 
   .botnav {
@@ -163,6 +164,7 @@
     width:100%;
     overflow: hidden;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    animation: introcolor 2s linear infinite alternate-reverse;
   }
 
   .botnav p{
@@ -182,6 +184,10 @@ a:hover{
     filter:drop-shadow(0px 0px 10px rgb(0, 153, 255));
     animation: transitionA 1s linear infinite normal;
 
+}
+
+a:active{
+    transform: scale(0.9);
 }
 
   .botnav img{
