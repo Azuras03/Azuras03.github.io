@@ -7,10 +7,8 @@
     }
 }*/
 
-@font-face {
-    font-family: "Pusab";
-    src: url('font/PUSAB___.otf');
-}
+@import url('http://fonts.cdnfonts.com/css/pusab');
+
 
 html {
     background: rgb(76,9,121);
@@ -290,4 +288,3 @@ html {
        opacity: 100%;
        transform : scale(200) rotate(5000deg);
    }
-   
