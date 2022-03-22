@@ -173,7 +173,7 @@
 
   a{
     color : rgb(196, 226, 255);
-    transition: all 0.3s;
+    transition: all 0.3s cubic-bezier(0.65, 0.92, 0.12, 2.11);
     text-decoration: none;
     border-bottom:solid #333 0px;
 }
