@@ -64,15 +64,15 @@ if ($_SERVER["REQUEST_METHOD"] == "GET") {
         </form>        
       </div>';
 } else {
-    if ($_POST["message"] != "" && strlen($_POST["message"]) < 1000) {
+    if ($_POST["message"] != '' && strlen($_POST["message"]) < 1000) {
         $message = filter_var($_POST["message"], FILTER_SANITIZE_STRING);
-        $file = fopen("messages.txt", "a");
-        fwrite($file, $message.'    ');
-        fclose($file);
+    }
+    else{
+        $message = "Rien, comme moi :]]]";
     }
     echo '
       <div class="main-content">
-        <p>Vous avez écrit </p> <p style="color: #73a6ff;font-size: x-large">' . $_POST["message"] . '</p>       
+        <p>Vous avez écrit </p> <p style="color: #73a6ff;font-size: x-large">' . $message . '</p>       
       </div>';
 }
 
