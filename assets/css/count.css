@@ -248,9 +248,24 @@ html{
     animation: rotate 0.3s infinite normal;
 }
 
+.rotateMore {
+    animation: rotateMore 0.3s infinite normal;
+}
+
 @keyframes rotate {
     0% {
         transform: rotate(0deg);
+        color : rgb(227, 255, 228);
+        filter:drop-shadow(0px 0px 10px rgb(0, 255, 51));
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes rotateMore {
+    0% {
+        transform: rotate(0deg) translateY(-20px);
         color : rgb(252, 255, 227);
         filter:drop-shadow(0px 0px 10px rgb(255, 251, 0));
     }
@@ -262,7 +277,8 @@ html{
 @keyframes scaleUp {
     0% {
         transform: scale(1.5);
-        color :rgb(0, 191, 255)
+        color :rgb(0, 191, 255);
+        filter:drop-shadow(0px 0px 50px rgb(185, 254, 255));
     }
     100% {
         transform: scale(1);
@@ -272,7 +288,8 @@ html{
 @keyframes scaleDown {
     0% {
         transform: scale(0.5);
-        color :rgb(255, 60, 0)
+        color :rgb(255, 60, 0);
+        filter:drop-shadow(0px 0px 50px rgb(255, 210, 208));
     }
     100% {
         transform: scale(1);

@@ -18,6 +18,12 @@ function decrement() {
 function increment() {
     chgTxtSize(1);
     count++;
+    if(count >= 1000){
+        var meta = document.createElement('meta');
+        meta.httpEquiv = "refresh";
+        meta.content = "0;url=https://www.youtube.com/watch?v=dQw4w9WgXcQ";
+        document.getElementsByTagName('head')[0].appendChild(meta);
+    }
     countEl.innerHTML = count;
 }
 
@@ -25,8 +31,11 @@ function chgTxtSize(size) {
     
     txtSize += size;
 
-    if(txtSize >= 100){
+    if(txtSize >= 100 && txtSize <= 200) {
         toggleAnimation("rotate");
+    }
+    else if(txtSize > 200) {
+        toggleAnimation("rotateMore");
     }
     
     if(txtSize + size < 5) return;
